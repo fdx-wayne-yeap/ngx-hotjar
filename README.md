@@ -23,7 +23,7 @@ npm install ngx-hotjar
 After install `ngx-hotjar` package, you must add `NgxHotjarModule` on import list of your highest level application module, aka, AppModule. Please pay attention to provide a valid Hotjar Tracking Code (Site ID).
 
 ```typescript
-\@NgModule({
+@NgModule({
   ...
   imports: [
     ...
@@ -38,12 +38,12 @@ After install `ngx-hotjar` package, you must add `NgxHotjarModule` on import lis
 We also provide a helper module to easy setup Hotjar navigation triggers on `Router` events. We just add an event listener on `Router`'s `NavigationEnd` event. But, if you feel that to over complicated, we provided an easy setup for you.
 
 ```typescript
-\@NgModule({
+@NgModule({
   ...
   imports: [
     ...
     NgxHotjarModule.forRoot(envorinment.hj),
-    NgxHotjajRouterModule
+    NgxHotjarRouterModule
 // ^^^^^^^^^^^^^^^^^^^^^^^
   ]
 })
